@@ -25,42 +25,43 @@ document.addEventListener('scroll', function () {
 
     if(isInViewport(box)) {
         if (st > lastScrollTop) {
-            if(scrollY > 380 && scrollY < 416) {
+            if(scrollY > 290 && scrollY < 330) {
                 fadeOut(img1);
                 fadeIn(img2, "block");
-            } else if (scrollY > 416 && scrollY < 452) {
+            } else if (scrollY > 330 && scrollY < 370) {
                 fadeOut(img2);
                 fadeIn(img3, "block");
-            } else if (scrollY > 452 && scrollY < 488) {
+            } else if (scrollY > 370 && scrollY < 420) {
                 fadeOut(img3);
                 fadeIn(img4, "block");
-            } else if (scrollY > 488 && scrollY < 524) {
+            } else if (scrollY > 420 && scrollY < 455) {
                 fadeOut(img4);
                 fadeIn(img5, "block");
-            } else if (scrollY > 524 && scrollY < 560) {
+            } else if (scrollY > 455 && scrollY < 495) {
                 fadeOut(img5);
                 fadeIn(img6, "block");
             }
         } else {
-            if(scrollY > 380 && scrollY < 416) {
+            if(scrollY > 290 && scrollY < 330) {
                 fadeOut(img2);
                 fadeIn(img1, "block");
-            } else if (scrollY > 416 && scrollY < 452) {
+            } else if (scrollY > 330 && scrollY < 370) {
                 fadeOut(img3);
                 fadeIn(img2, "block");
-            } else if (scrollY > 452 && scrollY < 488) {
+            } else if (scrollY > 370 && scrollY < 420) {
                 fadeOut(img4);
                 fadeIn(img3, "block");
-            } else if (scrollY > 488 && scrollY < 524) {
+            } else if (scrollY > 420 && scrollY < 455) {
                 fadeOut(img5);
                 fadeIn(img4, "block");
-            } else if (scrollY > 524 && scrollY < 560) {
+            } else if (scrollY > 455 && scrollY < 495) {
                 fadeOut(img6);
                 fadeIn(img5, "block");
             }
         }
         lastScrollTop = st <= 0 ? 0 : st; 
     }
+    console.log(scrollY);
 });
 
 // FADE OUT FUNCTION
